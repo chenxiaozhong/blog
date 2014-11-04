@@ -1,0 +1,14 @@
+name: Monkey Jekyll Blog
+description: 记录一些琐事
+meta_description: "Your New Jekyll Site, Blogging about stuffs"
+
+markdown: redcarpet
+highlighter: pygments
+logo: false
+paginate: 15
+baseurl: /
+domain_name: 'https://github.com/chenxiaozhong'
+
+# Details for the RSS feed generator
+url:            'blog url'
+author:         'Monkey'
