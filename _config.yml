@@ -1,10 +1,10 @@
-name: Monkey Jekyll Blog
+name: Monkey's Space
 description: 记录一些琐事
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+meta_description: "网络日志，记录一些琐事"
 
 markdown: redcarpet
 highlighter: pygments
-logo: false
+logo: true
 paginate: 15
 baseurl: /blog/
 domain_name: 'https://github.com/chenxiaozhong'

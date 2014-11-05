@@ -2,7 +2,7 @@
 layout: post
 title:  "图片作品集"
 date:   2014-11-05 10:18:00
-categories: Thriller Comedy Horror
+categories: Essay
 ---
 
 

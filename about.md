@@ -7,6 +7,8 @@ title: About me
 
 > ###关于我:
 
+> 程序猿一枚，热爱编程、玩蛋，喜欢干净整洁的代码，轻微代码洁癖。 
+
 function ID() {
 
 * 名字：Monkey

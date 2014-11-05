@@ -6,10 +6,11 @@
 
     <title>{{ site.name }} - {{ site.description }}</title>
     <meta name="description" content="{{ site.meta_description}}" />
-
+    <meta name="author" content="{{ site.author}}">
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ site.baseurl }}favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
@@ -48,5 +49,11 @@
       })();
 
     </script>   
+
+    <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd6e6f1bb6124d8a412f8505146e9584e' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
 </body>
 </html>
