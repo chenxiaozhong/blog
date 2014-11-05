@@ -33,3 +33,6 @@ cd 到工程目录，目前网上大部分教程说的启动服务命令 jekyll 
 ```
 jekyll serve
 ```
+
+#Jekyll主题
+本次使用的是Kasper主题
