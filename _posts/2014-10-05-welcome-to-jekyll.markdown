@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "使用Github Pages和Jekyll搭建博客"
-date:   2014-11-04 15:18:00
+date:   2014-10-05 15:18:00
 categories: Essay
 ---
 
