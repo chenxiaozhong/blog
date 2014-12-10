@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "Unity 与 Java 互调通信"
+title:  "Unity 与 Android Java 互调通信"
 date:   2014-12-05 10:18:00
 categories: Essay
 ---
 
 
 前几天朋友游戏公司的游戏急于接入UC国内渠道商平台，就顺便过去帮忙做了几天游戏与UC SDK接入工作。
-
-做下总结
 
 ###准备工作
 
@@ -23,7 +21,7 @@ categories: Essay
 ###Unity项目工作
 
 导出Android项目的jar包，在Unity项目里的ASSETS文件夹下新建文件夹Plugins,在Plugins文件夹中新建Android文件夹，在Android文件夹中新建bin文件夹和libs文件夹，将Android打好包的
-jar复制到bin文件夹中，将91SDK的libs文件夹下的NdComPlatform.jar、alipay_msp.jar、android-support-v4.jar复制到libs文件夹中，将91SDK的res文件夹全部复制到Android文件夹中，将Android项目的AndroidManifest.xml复制到ANDORID文件夹下，把Android项目中的资源按照对应的文件夹复制到UNITY项目RES文件夹的对应文件夹内。
+jar复制到bin文件夹中，将91SDK的libs文件夹下想要用到的jar包全部复制到libs文件夹中，将91SDK的res文件夹全部复制到Android文件夹中，将Android项目的AndroidManifest.xml复制到ANDORID文件夹下，把Android项目中的资源按照对应的文件夹复制到UNITY项目RES文件夹的对应文件夹内。
 
 ###Unity打包工作
 
