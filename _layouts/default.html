@@ -6,6 +6,7 @@
 
     <title>{{ site.name }} - {{ site.description }}</title>
     <meta name="description" content="{{ site.meta_description}}" />
+<<<<<<< HEAD
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
@@ -15,6 +16,18 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <!-- Customisation  -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+=======
+    <meta name="author" content="{{ site.author}}">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ site.baseurl }}favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/main.css" />
+>>>>>>> gh-pages
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
@@ -30,9 +43,15 @@
       </section>
     </footer>
     
+<<<<<<< HEAD
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
+=======
+    <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}assets/js/index.js"></script>
+>>>>>>> gh-pages
 
     <!-- Google Analytics Tracking code -->
     <script type="text/javascript">
@@ -48,5 +67,14 @@
       })();
 
     </script>   
+<<<<<<< HEAD
+=======
+
+    <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd6e6f1bb6124d8a412f8505146e9584e' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+>>>>>>> gh-pages
 </body>
 </html>
