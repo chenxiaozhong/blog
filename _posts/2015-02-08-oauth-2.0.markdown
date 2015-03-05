@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "OAuth2.0的认证流程"
+date:   2015-02-08 21:34:00
+categories: Essay
+---
+
+
+###OAuth2.0的认证流程依赖注入
+
+###一、什么是OAuth协议
+
+OAuth（开放授权）是一个开放标准。
+允许第三方网站在用户授权的前提下访问在用户在服务商那里存储的各种信息。而这种授权无需将用户提供用户名和密码给第三方网站。
+
+OAuth允许用户提供一个令牌给第三方网站，一个令牌对应一个特定的第三方网站，同时该令牌只能在特定的时间内访问特定的资源。
+
+###二.OAuth2.0的认证流程
+
+在OAuth2.0的处理流程，主要分为以下四个步骤：
+
+1）得到授权码code;
+
+2) 获取access token;
+
+3) 通过access token，获取OpenID；
+
+4）通过access token 跟 OpenID调用API，获取用户授权信息
+
+上面是流程的大概四个步骤，在下面的流程示意图中会得到体现，这是我制作的一个幻灯片的流程图（文章最后会附上制作的OAuth幻灯片分享给大家），这里就直接截图下来进行讲解：
+
+![SimpleGray]({{ site.baseurl }}assets/images/oauth2.0_developer_pic.jpg)
+
+第一步：首先直接跳转至用户授权地址，即图示 Request User Url ，提示用户进行登录，并给予相关资源授权，得到唯一的Auth code，这里注意的是code只有10分钟的有效期，对于安全考虑，相对于OAuth 1.0省了一步获取临时的Token，并且有效期也进行了控制，比1.0认证简化了很多，并安全一些；
+
+第二步：得到授权code后，这一步就是请求access token，通过 图示 Request access url ，生成得到数据Token；
+
+第三步：通过Access Token请求OpenID，OpenID是用户在此平台的唯一标识，通过图示 Request info url 请求，然后得到OpenID；
+
+第四步：通过第二步得到的数据Token、第三步得到的OpenID及相关API，进行请求，获取用户授权资源信息。（我喜欢简洁明了，OAuth2.0认证流程就是这样，相信通过图示及讲解都能明白，若有不明白之处请留言）
+
+
+###OAuth2.0跟OAuth1.0有啥改进
+
+OAuth2.0对比OAuth1.0，主要改变有下面几点：
+
+1. 取消繁琐的签名，全部改用HTTPS。
+
+2. ATOK从原来的永久令牌变为临时令牌，增加RefreshToken
+
+3. 取消获取RequestToken的步骤
+
+4. 提供了多种场景的授权流程
