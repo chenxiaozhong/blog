@@ -6,7 +6,7 @@ categories: Essay
 ---
 
 
-###一.IoC(Inversion of control)/DI: 控制反转/依赖注入
+###一.IoC/DI: 控制反转/依赖注入
 
 ####IoC：
 
